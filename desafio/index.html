@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Rafael Brendo">
+    <meta name="description" content="mitando no html5">
+    <meta name="keywords" content="tecnologia, html5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturando Layout</title>
+    <link rel="shortcut icon" href="imagens/favicon-a.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="principal">
+        <header class="hero">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Quem Sou</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1>Curso Web Fundamentos</h1>
+                <p>Aprenda HTML, CSS e JavaScript</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="content-section">
+                <div class="card card-1">
+                    <!--Fiz uma nova classe dentro da minha classe. Aqui eu tenho class card e class card-1 que especifica ainda mais meu elemento. Dai eu posso formata-las em conjunto, bem como separadamente.-->
+                    <img src="imagens/card_01.png" alt="">
+                    <p><a href="#" class="content-card" target="_blank">Seletores</a></p>
+                </div>
+
+                <div class="card card-2">
+                    <img src="imagens/card_02.jpg" alt="">
+                    <p><a href="#" class="content-card" target="_blank" rel="">posicionamento</a></p>
+                </div>
+
+                <div class="card card-3">
+                    <img src="imagens/card_03.jpg" alt="">
+                    <p><a href="#" class="content-card" target="_blank">Fontes</a></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <article>
+                    <header class="content-header">
+                        <h2>Titulo</h2>
+                    </header>    
+                        <p>Paragrafo 1</p>
+                        <p>Paragrafo 2</p>
+                    
+                </article>
+            </section>
+        </main>
+
+        <footer class="rodape">
+
+            <p>Copyright &copy; 2022</p>
+        </footer>
+    </div>
+</body>
+</html>

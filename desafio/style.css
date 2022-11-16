@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   background: #ccc;
+   margin: 0;
+}
+
+.hero{
+    background-image: url(imagens/bg-3.jpg);
+    /* ../ volta um diretorio(pasta anterior)
+      ./ significa o proprio diretorio(propria pasta)
+    */
+    height: 500px;
+    background-position: right center;
+    background-size: cover;
+    border-top: 1px solid transparent;
+}
+
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+    
+}
+.hero nav ul{
+    text-align: right;
+    /*Olha pra hierarquia. É como se eu pegasse o "pai" da li e alinhasse para a direita*/
+    margin: 20px 50px 0px 0px;
+}
+.hero nav li{
+    display:inline-block;/*como se fosse uma unica linha*/
+    border: 1px solid rgb(230, 190, 190);
+    margin-left: 10px;
+    list-style: none;
+    
+
+}
+
+.hero nav a {
+    background: rgba(102, 89, 89, 0.13);
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero nav a:hover{
+    background: rgba(102, 89, 89, 0.753);
+}
+
+.hero-content h1{
+    /* minha classe hero-content e minha tag h1 dentro da classe. obs.: eu também poderia ter criado uma class para o h1(é descendente da minha classe)
+    */
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 2px #333;
+}
+.hero-content p{
+    background-color: rgba(0,0,0,.8);
+    /*Eu poderia ter colocado 0.8*/
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    
+}
+/*Por padrão, só pode ter um main por página, porque não existe dois conteúdos principais.
+*/
+main{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.content-section{
+    background-color: rgb(119, 78, 78);
+    padding: 10px;
+    margin-top: 15px; 
+    /*display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;*/
+    overflow: auto;/*Nesse caso vai ser uma gambiarra para redenizar/entender o tamanho dos blocos*/  
+}
+
+.content-section div a{
+    padding: 15px;
+    margin: 0px;
+    background-color: rgb(146, 9, 9);
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+   
+}
+.content-section div:hover{
+    background-color: rgba(11, 11, 131, 0.13);
+
+
+    
+    
+}
+
+.card{
+    width: 32%;
+    float: left;
+    box-sizing: border-box;/*Vai manter o tamanho que eu tinha declarado no width e height*/
+    
+}
+/*vai somar width 32 + 32 + 32 + 2(margin-right) + 2 (margin-right) */
+.card-1, .card-2{
+    margin-right: 2%;
+}
+.card img{
+    width: 100%;
+    display: block;
+}
+
+.card p{
+    background-color: rgba(145, 29, 29, 0.322);
+    color: rgb(182, 24, 24);
+    margin: 0px;
+    padding: 15px;
+    border:1px solid red
+}
+/*.content-section div {
+    border: 1px solid rgba(241, 236, 236, 0);
+    padding: 20px;
+    float: left;
+    
+      
+}
+*/
+/*.content-section div p {
+    display: flex;
+    
+    
+    text-align: left;
+    
+    padding: 20px;
+    background: rgba(126, 119, 119, 0.322);
+    color: rgba(0, 0, 0, 0.856) ;
+    border: 1px solid rgb(126, 119, 119);
+    
+    
+
+    
+}
+*/
+.content-header{
+    display: block;
+    
+    background: rgba(201, 189, 189, 0.014);
+    border: 1px solid #333;
+}
+
+.content-header h2{
+    margin:0px;
+    background: rgb(88, 88, 105);
+    padding: 10px;
+}
+.content-section p{
+    display: block;
+    border: 1px solid transparent;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.rodape{
+    height: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    font-size: 14px;
+    background:rgb(121, 119, 118);
+    line-height: 50px;
+    /*line-height com o valor de height é uma gambiarra para centralizar  */
+}

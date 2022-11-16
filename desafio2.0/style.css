@@ -1,0 +1,175 @@
+@charset "UTF-08";
+
+body{
+    background-color: rgba(247, 236, 224, 0.884);
+    margin: 0px;
+}
+
+.content-header{
+    background-image: url(imagens/bg-1.jpg);
+    background-size: cover;
+    background-repeat:no-repeat; 
+    border: 0px solid transparent;
+    height: 480px;
+    width: 1100px;
+    margin: auto;
+    padding: 8px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+nav{
+    text-align: justify;
+    border: 1px solid transparent;
+}
+.content-header nav ol{
+    list-style: none;
+    text-align: right;
+    margin: 10px 20px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(3, 3, 3);
+}
+.content-header nav li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.content-header nav a{
+    display: block;
+    background: rgba(250, 235, 215, 0.158);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
+.content-header nav a>div{
+    display: none;
+    position: absolute;
+    text-align: right;
+
+}
+
+.content-header nav a:hover>div{
+    /*Quando eu passar o mouse pelo houver de a, o que vai acontecer a div, que é minha children...*/
+    display: block;
+    background-color: transparent;
+    color: black;
+    text-align: right;
+    position: absolute;
+    
+}
+
+.content-header nav a:hover{
+    /*Quando eu passar o mouse em a*/
+    background-color: rgba(250, 235, 215, 0.219);
+    border-radius: 4px;
+
+}
+.content-header nav a:visited{
+  color: black;  
+}
+
+#content-div1{
+    text-align: center;
+    font-size: 35px;
+    border: 1px solid transparent;
+    margin-right:auto;
+    margin-left: auto; 
+    margin-top: 90px;
+    
+    
+}
+#content-div1 p{
+    border-bottom: 1px solid rgb(184, 149, 149);
+   display: inline-block;
+}
+#content-div1 p a{
+    background-color: rgba(250, 235, 215, 0.062);
+    padding: 1px;
+    display: inline-block;
+    border-radius: 7px;
+    
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 2px 0.7px black;
+    letter-spacing: normal;
+}
+#content-div1 p a:hover{
+    background-color: rgba(250, 235, 215, 0.219);
+    border-radius: 7px;
+    
+}
+#content-div1 p a:visited{
+    color: rgb(121, 88, 88);
+}
+#content-div2{
+    border: 1px solid transparent;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    display: block;
+    
+}
+#content-div2 a{
+    background-color: rgb(190, 178, 178);
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-shadow: 1px 1px white;
+    padding: 10px;
+    
+}
+#content-div2 a:hover{
+    background-color: rgb(190, 178, 178);
+    border-radius: 4px;
+    padding: 10px;
+    border-bottom: 1.5px solid rgb(166, 162, 170);
+}
+main{
+    width: 100%;
+    margin: auto;
+}
+section{
+    border: 1px solid transparent;
+    padding: 8px;
+    margin: auto;
+    width: 1100px;
+    overflow: auto;
+    background-color: rgba(136, 128, 143, 0.281);
+    
+}
+.card{
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.267);
+    padding: 4px;
+    text-align: center left; 
+    margin: 0px;
+}
+
+ .card-1, .card-2{
+    margin-right: 2%;
+}
+.card img{
+    width: 100%;
+    display: block;
+}
+.card a{
+    padding: 20px;
+    margin: 0px;
+    background-color: rgb(142, 137, 150);
+    display: block;
+    border-radius: 4px;
+}
+.card a:hover{
+    background-color: rgb(166, 170, 169);
+}
+footer{
+    text-align: center;
+}

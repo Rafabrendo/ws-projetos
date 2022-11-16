@@ -1,0 +1,17 @@
+*{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to bottom, #00b4d8, #90e0ef, #caf0f8);
+    /*Tem que colocar # para códigos hexadecimais*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+}
+.content-header{
+    border: 1px solid red;
+    background-image: url(fotos/pexels-francesco-ungaro-281260.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
